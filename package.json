@@ -1,0 +1,47 @@
+{
+  "name": "mern-skeleton",
+  "version": "1.0.0",
+  "description": "Skeleton for any mern stack application",
+  "keywords": [
+    "react",
+    "node",
+    "express",
+    "mongodb",
+    "mern"
+  ],
+  "main": "template.js",
+  "scripts": {
+    "development": "nodemon",
+    "build": "webpack --config webpack.config.client.production.js && webpack --mode=production --config webpack.config.server.js",
+    "start": "NODE_ENV=production node ./dist/server.generated.js"
+  },
+  "repository": "git+https://github.com/rpierr33/mern-skeleton.git",
+  "author": "Ralph Pierre",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rpierr33/mern-skeleton/issues"
+  },
+  "homepage": "https://github.com/rpierr33/mern-skeleton#readme",
+  "private": false,
+  "dependencies": {
+    "@hot-loader/react-dom": "^17.0.2",
+    "express": "^4.17.2",
+    "mongodb": "^4.4.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-hot-loader": "^4.13.0",
+    "why": "wtf"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.2",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
+    "babel-loader": "^8.2.3",
+    "nodemon": "^2.0.15",
+    "webpack": "^5.68.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-middleware": "^5.3.1",
+    "webpack-hot-middleware": "^2.25.1",
+    "webpack-node-externals": "^3.0.0"
+  }
+}
